@@ -5,16 +5,16 @@
 using namespace std;
 
 class Video {
-private:
+protected:
     int duracion;
-    int calificacion;
+    float calificacion;
     string estreno;
     string nombre;
     int id;
 
 public:
     Video();
-    Video(int duracion, int calificacion, string estreno, string nombre, int id);
+    Video(int duracion, float calificacion, string estreno, string nombre, int id);
 
 };
 
