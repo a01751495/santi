@@ -8,10 +8,7 @@ Pelicula::Pelicula(int duracion, float calificacion, string estreno, string nomb
 };
 
 void Pelicula::imprimir(){
-    cout<<"Nombre:"<<nombre<<endl;
-    cout<<"Calificacion:"<<calificacion<<endl;
-    cout<<"Fecha de estreno:"<<estreno<<endl;
-    cout<<"Duracion:"<<duracion<<endl;
+    Video::imprimir();
     cout<<"Genero:"<<genero<<endl;
 };
 

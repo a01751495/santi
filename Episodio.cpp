@@ -9,28 +9,23 @@ Episodio::Episodio(int duracion, float calificacion, string estreno, string nomb
 };
 
 void Episodio::imprimir(){
-    cout<<"Nombre :"<<nombre<<endl;
-    cout<<"Calificacion:"<<calificacion<<endl;
-    cout<<"Fecha de estreno:"<<estreno<<endl;
-    cout<<"Duracion:"<<duracion<<endl;
+    Video::imprimir();
     cout<<"Temporada:"<<temporada<<endl;
     cout<<"Numero de episodio:"<<num_ep<<endl;
 
-};
+}
 
 
 
 void Episodio::calificar(float calif,string nom){
-    if(nom == nombre)
-    calificacion=calif;
-    imprimir();
-    
-};
+    if(nom == nombre){
+        calificacion=calif;
+        imprimir();
+    }
+}
 
 void Episodio::muestravid_calif(float calif){
-    if(calificacion>calif)
-    imprimir();
-    else
-    cout<<"No cumple"<<endl;
-};
 
+    if(calificacion>calif){
+        imprimir();}
+}

@@ -10,7 +10,7 @@ class Episodio:public Video{
     int temporada;
     public:
     Episodio(int duracion, float calificacion, string estreno, string nombre, int id, int num_ep, int temporada);
-    void calificar(float,string);
+    void calificar(float calif,string nombre);
     void muestravid_calif(float calif);
     void imprimir();
 
