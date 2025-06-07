@@ -25,6 +25,7 @@ void Episodio::calificar(float calif,string nom){
 }
 
 void Episodio::muestravid_calif(float calif){
+
     if(calificacion>calif){
         imprimir();}
 }
