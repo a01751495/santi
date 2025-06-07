@@ -1,22 +1,32 @@
-#ifndef PELICULA_H
-#define PELICULA_H
+#ifndef STREAMING_H
+#define STREAMING_H
+#include <iostream>
+#include <vector>
 #include <string>
-using namespace std;
-#include "Video.h"
 #include "Contenido.h"
+using namespace std;
 
-class Pelicula:public Video, public Contenido{
+class Streaming{
     private:
-    string genero;
+    vector<Contenido*> catalogo;
     public:
-    Pelicula(int duracion, float calificacion, string estreno, string nombre, int id, string genero);
+    Streaming();
     void calificar(float calif,string nom_video);
     void videos_peli_calif(float calif);
     void muestraGenero(string gen);
     void muestravidCalif(float calif);
-    void imprimir();
     void muestraEp(string nom_serie);
+    void anadirContenido(Contenido *c);
+
+
+
+
 
 };
+
+
+
+
+
 
 #endif

@@ -9,38 +9,38 @@ Pelicula::Pelicula(int duracion, float calificacion, string estreno, string nomb
 
 void Pelicula::imprimir(){
     Video::imprimir();
-    cout<<"Genero:"<<genero<<endl;
+    cout << "🎭  Género: " << genero << endl;
+    cout << "═══════════════════════════════════════════════\n\n";
 };
 
-
+void Pelicula::muestraEp(string nom_serie){};
 
 void Pelicula::calificar(float calif,string nom){
-    if(nom == nombre)
+    if(nom == nombre){
     calificacion=calif;
-    imprimir();
+    cout<<"La calificación de la pelicula: "<< nombre<<"se ha cambiado exitosamente"<<endl;
+    imprimir();}
     
 
 };
 void Pelicula::videos_peli_calif(float calif){
     if(calificacion>calif)
     imprimir();
-    else
-    cout<<"No cumple"<<endl;
+
 
 
 };
 void Pelicula::muestraGenero(string gen){
     if(genero==gen)
     imprimir();
-    else
-    cout<<"No cumple"<<endl;
+
 
 };
 void Pelicula::muestravidCalif(float calif){
     if(calificacion>calif)
     imprimir();
-    else
-    cout<<"No cumple"<<endl;
+    
+
 };
 
 

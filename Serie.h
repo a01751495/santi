@@ -12,17 +12,19 @@ class Serie:public Contenido{
 
     private:
     string nombre;
-    vector <Episodio> ep;
+    vector <Episodio*> ep;
     int id;
     string genero;
 
     public:
     Serie();
     Serie(string nom, int ide, string gen);
-    void calificar(int calif, string nom_vid);
+    void calificar(float calif, string nom_vid);
     void muestravidCalif(float calif);
     void muestraGenero(string gen);
     void muestraEp(string nom_serie);
+    void anadirEpisodio(Episodio *e);
+    void videos_peli_calif(float calif);
     void imprimir();
 
 };
