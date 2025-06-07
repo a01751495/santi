@@ -9,6 +9,9 @@ int main(){
     pelicula1.muestra_genero("dmdm");
     pelicula1.calificar(10.1,"Forrest Gump");
     pelicula1.muestravid_calif(13);
+    
+
+
 
     
 
