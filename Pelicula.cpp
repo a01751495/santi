@@ -24,7 +24,7 @@ void Pelicula::calificar(float calif,string nom){
     
 
 };
-void Pelicula::videos_calificarp(float calif){
+void Pelicula::videos_peli_calif(float calif){
     if(calificacion>calif)
     imprimir();
     else
@@ -32,14 +32,14 @@ void Pelicula::videos_calificarp(float calif){
 
 
 };
-void Pelicula::muestra_genero(string gen){
+void Pelicula::muestraGenero(string gen){
     if(genero==gen)
     imprimir();
     else
     cout<<"No cumple"<<endl;
 
 };
-void Pelicula::muestravid_calif(float calif){
+void Pelicula::muestravidCalif(float calif){
     if(calificacion>calif)
     imprimir();
     else
